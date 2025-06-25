@@ -54,6 +54,9 @@ A web-based calculator that mimics the look and feel of the native iOS calculato
 - To add advanced functionalities, modify `script.js`.
 
 
+![image](https://github.com/user-attachments/assets/519cf19a-9f84-4870-92a8-7964368b3823)
+
+
 ## License
 
 This project is licensed under the MIT License.
