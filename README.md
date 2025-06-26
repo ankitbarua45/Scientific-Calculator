@@ -1,84 +1,73 @@
+# Scientific Calculator
 
-# 🔢 Scientific Calculator Web App
+A web-based calculator that mimics the look and feel of the native iOS calculator app, built using **HTML**, **CSS**, and **JavaScript**.
 
-A sleek and fully functional **Scientific Calculator** built using **HTML**, **CSS**, and **JavaScript**. It includes basic arithmetic operations, trigonometric functions, logarithms, exponentiation, factorials, and more — all within a beautiful and responsive UI.
+## Features
 
----
+- 🧮 Basic arithmetic operations: addition, subtraction, multiplication, division
+- 🧪 Scientific functions: trigonometric, logarithmic, exponential, square root, and more
+- 🖱️ Interactive user interface inspired by the iOS calculator
+- 💻 Responsive design for desktop and mobile browsers
+- 🎨 Sleek, modern UI with smooth button animations
 
-## 🚀 Features
+## Demo
 
-- Basic operations: `+`, `-`, `*`, `/`
-- Advanced functions:
-  - Trigonometric: `sin`, `cos`, `tan`
-  - Logarithmic: `log`, `ln`
-  - Powers and roots: `x²`, `√`, `x^y`
-  - Constants: `π`, `e`
-  - Others: `!`, `rad`, `°`, parentheses
-- Clear display and reset
-- Responsive layout
-- Styled with gradients and modern UI
+> _Add a link to your live demo or a screenshot here!_
 
----
+![Scientific Calculator Screenshot](screenshot.png)
 
-## 🛠️ Technologies Used
+## Getting Started
 
-- **HTML5** for structure
-- **CSS3** for styling (modern grid layout, media queries)
-- **Vanilla JavaScript** for logic and interactions
+### Prerequisites
 
----
+- A modern web browser (Chrome, Firefox, Safari, Edge)
 
-## 📷 Screenshot
+### Installation
 
-![image](https://github.com/user-attachments/assets/53c4fba8-3ecc-437e-838b-865723cc555e)
+1. **Clone the repository:**
+    ```sh
+    git clone https://github.com/ankitbarua45/Scientific-Calculator.git
+    cd Scientific-Calculator
+    ```
 
+2. **Open `index.html` in your browser:**
+    - You can simply double-click the `index.html` file
+    - Or use a local web server for better experience:
+      ```sh
+      # Using Python 3.x
+      python -m http.server
+      ```
+      Then, open [http://localhost:8000](http://localhost:8000) in your browser
 
----
+## Usage
 
-## 🧩 Folder Structure
+- Click or tap calculator buttons to perform calculations.
+- Use the scientific functions for advanced operations.
+- Press `AC` to clear all input.
 
-```
-
-calculator/
-├── index.html
-├── style.css
-├── script.js
-└── README.md
-
-````
-
----
-
-## 💡 How to Use
-
-1. Clone or download this repository:
-   ```bash
-   git clone https://github.com/your-username/scientific-calculator.git
-````
-
-2. Open `index.html` in your browser.
-
-3. Start calculating!
-
----
-
-## 📱 Responsive Design
-
-The layout adapts to smaller screens using media queries. Buttons reorganize into fewer columns to prevent overflow.
-
----
-
-## 🧑‍💻 Author
-
-**Ankit Barua**
-
----
-
-## 📜 License
-
-This project is open-source and free to use under the [MIT License](LICENSE).
+## Project Structure
 
 ```
+.
+├── index.html        # Main HTML file
+├── style.css         # Stylesheet
+├── script.js         # Calculator logic
+└── README.md         # Project documentation
+```
 
----
+## Customization
 
+- **Appearance:** Modify `style.css` for color or layout changes.
+- **Functionality:** Add or adjust functions in `script.js`.
+
+## Contributing
+
+Contributions are welcome! Please open an issue or submit a pull request to improve this project.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
+## Author
+
+[Ankit Barua](https://github.com/ankitbarua45)
