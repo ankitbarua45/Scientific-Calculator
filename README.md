@@ -31,12 +31,7 @@ A web-based calculator that mimics the look and feel of the native iOS calculato
 
 2. **Open `index.html` in your browser:**
     - You can simply double-click the `index.html` file
-    - Or use a local web server for better experience:
-      ```sh
-      # Using Python 3.x
-      python -m http.server
-      ```
-      Then, open [http://localhost:8000](http://localhost:8000) in your browser
+    - Start calculating!
 
 ## Usage
 
