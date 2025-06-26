@@ -1,79 +1,104 @@
+/* Overall page styling */
 body {
-  background: #efefef;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #4CA1AF, #C4E0E5);
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   margin: 0;
-  font-family: sans-serif;
+  padding: 0;
 }
 
-.phone {
-  background: #000;
-  width: 320px;
-  height: 600px;
-  border-radius: 30px;
-  padding: 20px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
+/* Calculator container */
 .calculator {
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
-}
-
-.screen {
-  color: white;
-  text-align: right;
+  background-color: #fdfbe3;
   padding: 20px;
-  font-size: 2rem;
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+  width: 620px;
+  max-width: 95vw;
+  box-sizing: border-box;
 }
 
-#expression {
-  color: gray;
-  font-size: 1rem;
+/* Display screen */
+#display {
+  width: 100%;
+  height: 50px;
+  font-size: 24px;
+  margin-bottom: 15px;
+  text-align: right;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  box-sizing: border-box;
 }
 
-#result {
-  font-size: 2.5rem;
-}
-
+/* Button grid */
 .buttons {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(7, 1fr);
   gap: 10px;
 }
 
+/* Button base style */
 button {
-  height: 60px;
-  font-size: 1.5rem;
+  padding: 12px;
+  font-size: 18px;
   border: none;
-  border-radius: 50%;
-  background: #333;
-  color: white;
+  border-radius: 10px;
   cursor: pointer;
-  transition: background 0.2s;
+  transition: background-color 0.2s ease;
 }
 
-button.gray {
-  background: #a5a5a5;
+/* Button hover effect */
+button:hover {
+  background-color: #ddd;
+}
+
+/* Special orange buttons (e.g., C, (), x^) */
+button:nth-child(1),
+button:nth-child(2),
+button:nth-child(3),
+button:nth-child(4),
+button:nth-child(5),
+button:nth-child(6),
+button:nth-child(7) {
+  background-color: #fdbb55;
   color: black;
 }
 
-button.orange {
-  background: #f1a33c;
+/* Grey buttons (numbers and basic operators) */
+button:nth-child(n+8):nth-child(-n+28) {
+  background-color: #777;
   color: white;
 }
 
-button.zero {
-  grid-column: span 2;
-  border-radius: 30px;
+/* Blue function buttons */
+button:nth-child(n+29) {
+  background-color: #aef;
+  color: black;
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 700px) {
+  .calculator {
+    width: 100%;
+    padding: 15px;
+  }
+
+  #display {
+    font-size: 20px;
+  }
+
+  .buttons {
+    grid-template-columns: repeat(4, 1fr); /* stack buttons into fewer columns */
+  }
+
+  button {
+    font-size: 16px;
+    padding: 10px;
+  }
 }
