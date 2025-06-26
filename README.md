@@ -10,11 +10,10 @@ A web-based calculator that mimics the look and feel of the native iOS calculato
 - 💻 Responsive design for desktop and mobile browsers
 - 🎨 Sleek, modern UI with smooth button animations
 
-## Demo
+## screenshot
 
-> _Add a link to your live demo or a screenshot here!_
+![Opera Snapshot_2025-06-26_140802_codepen io](https://github.com/user-attachments/assets/8d568b82-619d-41de-901d-413082750097)
 
-![Scientific Calculator Screenshot](screenshot.png)
 
 ## Getting Started
 
