@@ -1,40 +1,44 @@
-let expression = '';
-let resultDisplay = document.getElementById('result');
-let expressionDisplay = document.getElementById('expression');
+const display = document.getElementById('display');
 
-function appendValue(value) {
-  expression += value;
-  updateDisplay();
+function appendValue(val) {
+  display.value += val;
+}
+
+function appendFunction(func) {
+  display.value += func;
 }
 
 function clearDisplay() {
-  expression = '';
-  resultDisplay.innerText = '0';
-  expressionDisplay.innerText = '';
+  display.value = '';
 }
 
-function deleteLast() {
-  expression = expression.slice(0, -1);
-  updateDisplay();
-}
-
-function updateDisplay() {
-  expressionDisplay.innerText = expression;
-  try {
-    const result = eval(expression);
-    resultDisplay.innerText = result;
-  } catch {
-    resultDisplay.innerText = 'Error';
+function toggleSign() {
+  if (display.value) {
+    display.value = String(-parseFloat(display.value));
   }
+}
+
+function calculateFactorial() {
+  let n = parseInt(display.value);
+  if (isNaN(n) || n < 0) {
+    display.value = "Error";
+    return;
+  }
+  let fact = 1;
+  for (let i = 2; i <= n; i++) {
+    fact *= i;
+  }
+  display.value = fact;
+}
+
+function power() {
+  display.value += "**";
 }
 
 function calculate() {
   try {
-    const result = eval(expression);
-    resultDisplay.innerText = result;
-    expression = result.toString();
-    expressionDisplay.innerText = '';
+    display.value = eval(display.value);
   } catch {
-    resultDisplay.innerText = 'Error';
+    display.value = "Error";
   }
 }
