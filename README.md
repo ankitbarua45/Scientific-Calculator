@@ -1,67 +1,84 @@
-# iOS-Style Calculator
 
-A web-based calculator that mimics the look and feel of the native iOS calculator app, built using HTML, CSS, and JavaScript.
+# 🔢 Scientific Calculator Web App
 
-## Features
+A sleek and fully functional **Scientific Calculator** built using **HTML**, **CSS**, and **JavaScript**. It includes basic arithmetic operations, trigonometric functions, logarithms, exponentiation, factorials, and more — all within a beautiful and responsive UI.
 
-- Clean, responsive UI inspired by iOS calculator
-- Supports basic arithmetic operations: addition, subtraction, multiplication, division
-- Interactive buttons with smooth transitions
-- Responsive design for mobile and desktop
-- Easy to customize and extend
+---
 
-## Getting Started
+## 🚀 Features
 
-### Prerequisites
+- Basic operations: `+`, `-`, `*`, `/`
+- Advanced functions:
+  - Trigonometric: `sin`, `cos`, `tan`
+  - Logarithmic: `log`, `ln`
+  - Powers and roots: `x²`, `√`, `x^y`
+  - Constants: `π`, `e`
+  - Others: `!`, `rad`, `°`, parentheses
+- Clear display and reset
+- Responsive layout
+- Styled with gradients and modern UI
 
-- A modern web browser (Chrome, Firefox, Safari, Edge)
+---
 
-### Installation
+## 🛠️ Technologies Used
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/ankitbarua45/iOS-Style-Calculator.git
-   cd iOS-Style-Calculator
-   ```
+- **HTML5** for structure
+- **CSS3** for styling (modern grid layout, media queries)
+- **Vanilla JavaScript** for logic and interactions
 
-2. **Open the calculator**
-   - Open `index.html` in your browser.
+---
 
-## Usage
+## 📷 Screenshot
 
-- Click the buttons to perform calculations.
-- Use `C` to clear the display.
-- Supports keyboard input for numbers and operators.
+![image](https://github.com/user-attachments/assets/53c4fba8-3ecc-437e-838b-865723cc555e)
 
-## Project Structure
+
+---
+
+## 🧩 Folder Structure
 
 ```
-.
+
+calculator/
 ├── index.html
-├── styles.css
+├── style.css
 ├── script.js
-└── read.md
+└── README.md
+
+````
+
+---
+
+## 💡 How to Use
+
+1. Clone or download this repository:
+   ```bash
+   git clone https://github.com/your-username/scientific-calculator.git
+````
+
+2. Open `index.html` in your browser.
+
+3. Start calculating!
+
+---
+
+## 📱 Responsive Design
+
+The layout adapts to smaller screens using media queries. Buttons reorganize into fewer columns to prevent overflow.
+
+---
+
+## 🧑‍💻 Author
+
+**Ankit Barua**
+
+---
+
+## 📜 License
+
+This project is open-source and free to use under the [MIT License](LICENSE).
+
 ```
 
-- `index.html` – Main HTML layout.
-- `styles.css` – iOS-inspired styling.
-- `script.js` – Calculator logic.
-- `read.md` – This documentation.
+---
 
-## Customization
-
-- To change colors or layout, edit `styles.css`.
-- To add advanced functionalities, modify `script.js`.
-
-
- ## Screenshots
-![image](https://github.com/user-attachments/assets/519cf19a-9f84-4870-92a8-7964368b3823)
-
-
-## License
-
-This project is licensed under the MIT License.
-
-## Author
-
-[ankitbarua45](https://github.com/ankitbarua45)
